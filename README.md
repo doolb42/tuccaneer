@@ -12,14 +12,15 @@ Beyond startup defaults, tucCANeer exposes a simple Python API for reading vehic
 
 Minimum requirement for the core use case:
 - Raspberry Pi Zero 2W
-- PiCAN HAT (SK Pang)
+- MCP2515 CAN chip
 - OBD-II to DB9 cable
 
 A Pi 4B or greater is needed if you want to run display tooling on top of the framework.
+The base framework hardware listed above can be purchased for ~£10
 
 ## Design
 
-tucCANeer has no opinion on display, input, or physical controls. It handles the CAN layer and publishes vehicle state to a Redis pub/sub bus. Anything that wants to read state or send commands uses `api.py`. What you build on top of that is up to you.
+tucCANeer has no opinion on display, input, or physical controls. It handles the CAN layer and publishes vehicle state to a Redis pub/sub bus. Anything that wants to read state or send commands uses `api.py`. What you build on top of that is up to you. Use this framework at your own risk. I accept no responsibility for anything you do.
 
 ## Status
 
